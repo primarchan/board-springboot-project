@@ -23,10 +23,10 @@ spring:
   h2.console.enabled: true
   sql.init.mode: always
 
----
-
-spring:
-  config.activate.on-profile: testdb
+#---
+#
+#spring:
+#  config.activate.on-profile: testdb
 #  datasource:
 #    url: jdbc:h2:mem:board;mode=mysql
 #    driver-class-name: org.h2.Driver
