@@ -1,10 +1,10 @@
 package com.primarchan.projectboard.controller;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
@@ -15,6 +15,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+@Disabled("Spring Data REST 통합테스트 불필요에 따른 제외")
 @DisplayName("Data REST - API 테스트")
 @Transactional
 @AutoConfigureMockMvc
@@ -27,7 +28,7 @@ public class DataRestTest {
         this.mvc = mvc;
     }
 
-    @DisplayName("[api] 게시글 리스트 조회")
+    @DisplayName("[API] 게시글 리스트 조회")
     @Test
     void given_whenRequestingArticles_thenReturnArticlesJsonResponse() throws Exception {
         // Given
@@ -38,7 +39,7 @@ public class DataRestTest {
                 .andExpect(content().contentType(MediaType.valueOf("application/hal+json")));
     }
 
-    @DisplayName("[api] 게시글 단건 조회")
+    @DisplayName("[API] 게시글 단건 조회")
     @Test
     void given_whenRequestingArticle_thenReturnArticleJsonResponse() throws Exception {
         // Given
@@ -49,7 +50,7 @@ public class DataRestTest {
                 .andExpect(content().contentType(MediaType.valueOf("application/hal+json")));
     }
 
-    @DisplayName("[api] 게시글 -> 댓글 리스트 조회")
+    @DisplayName("[API] 게시글 -> 댓글 리스트 조회")
     @Test
     void given_whenRequestingArticleCommentsFromArticle_thenReturnArticleCommentsJsonResponse() throws Exception {
         // Given
@@ -60,7 +61,7 @@ public class DataRestTest {
                 .andExpect(content().contentType(MediaType.valueOf("application/hal+json")));
     }
 
-    @DisplayName("[api] 댓글 리스트 조회")
+    @DisplayName("[API] 댓글 리스트 조회")
     @Test
     void given_whenRequestingArticleComments_thenReturnArticleCommentsJsonResponse() throws Exception {
         // Given
@@ -71,7 +72,7 @@ public class DataRestTest {
                 .andExpect(content().contentType(MediaType.valueOf("application/hal+json")));
     }
 
-    @DisplayName("[api] 댓글 단건 조회")
+    @DisplayName("[API] 댓글 단건 조회")
     @Test
     void given_whenRequestingArticleComment_thenReturnArticleCommentJsonResponse() throws Exception {
         // Given
