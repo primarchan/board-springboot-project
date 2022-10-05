@@ -32,7 +32,7 @@ class JpaRepositoryTest {
         this.articleCommentRepository = articleCommentRepository;
     }
 
-    @DisplayName("select 테스트")
+    @DisplayName("SELECT 테스트")
     @Test
     void JPA_Repository_Select_Test() {
         // Given
@@ -46,7 +46,7 @@ class JpaRepositoryTest {
                 .hasSize(123);
     }
 
-    @DisplayName("insert 테스트")
+    @DisplayName("INSERT 테스트")
     @Test
     void JPA_Repository_Insert_Test() {
         // Given
@@ -59,7 +59,7 @@ class JpaRepositoryTest {
         assertThat(articleRepository.count()).isEqualTo(previousCount + 1);
     }
 
-    @DisplayName("update 테스트")
+    @DisplayName("UPDATE 테스트")
     @Test
     void JPA_Repository_Update_Test() {
         // Given
@@ -74,7 +74,7 @@ class JpaRepositoryTest {
         assertThat(savedArticle).hasFieldOrPropertyWithValue("hashtag", updatedHashtag);
     }
 
-    @DisplayName("delete 테스트")
+    @DisplayName("DELETE 테스트")
     @Test
     void JPA_Repository_Delete_Test() {
         // Given
