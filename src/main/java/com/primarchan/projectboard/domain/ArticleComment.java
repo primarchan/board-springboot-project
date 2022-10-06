@@ -15,7 +15,7 @@ import java.util.Objects;
         @Index(columnList = "createdBy")
 })
 @Entity
-public class ArticleComment extends AuditingFeilds {
+public class ArticleComment extends AuditingFields {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
