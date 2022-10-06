@@ -1,8 +1,3 @@
--- 테스트 계정
-insert into user_account (user_id, user_passwor, nickname, email, memo, created_at, created_by, modified_at, modified_by)
-values ('primarchan', '1111', '프라이마크', 'primarchan@gmail.com' , 'I am primarchan', now(), 'primarchan', now(), 'primarchan')
-;
-
 -- 123 게시글
 insert into article (title, content, hashtag, created_by, modified_by, created_at, modified_at) values
                                                                                                     ('Quisque ut erat.', 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
