@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>게시글 페이지</title>
+</head>
+<body>
+    <header id="header"></header>
+
+    <main>
+        <header>
+            <h1>첫 번째 글</h1>
+        </header>
+
+        <aside>
+            <p>Primarchan</p>
+            <p><a href="mailto:primarchan@gmail.com">primarchan@mail.com</a></p>
+            <p><time datetime="2022-01-01T00:00:00">2022-01-01</time></p>
+            <p>#Java</p>
+        </aside>
+
+        <section>
+            <div>
+                <form>
+                    <label for="articleComment" hidden>댓글</label>
+                    <textarea id="articleComment" placeholder="댓글 쓰기..." rows="3"></textarea>
+                    <button type="submit">쓰기</button>
+                </form>
+
+                <ul>
+                    <li>
+                        <div>
+                            <time><small>2022-01-01</small></time>
+                            <strong>Primarchan</strong>
+                            <p>
+                                Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl,
+                                ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time><small>2022-01-02</small></time>
+                            <strong>Primarchan</strong>
+                            <p>
+                                Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque,
+                                quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <nav>
+                <a href="#">이전 글</a>
+                <a href="#">다음 글</a>
+            </nav>
+        </section>
+
+
+    </main>
+
+    <footer id="footer"></footer>
+</body>
+</html>
