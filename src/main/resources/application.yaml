@@ -17,6 +17,7 @@ spring:
 #    username: sa
 #    driver-class-name: org.h2.Driver
   jpa:
+    open-in-view: false
     defer-datasource-initialization: true
     hibernate.ddl-auto: create
     show-sql: true
