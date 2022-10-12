@@ -8,6 +8,9 @@
 ### QueryDSL
 /src/main/generated
 
+### JPA Buddy
+.jpb/
+
 # User-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml
