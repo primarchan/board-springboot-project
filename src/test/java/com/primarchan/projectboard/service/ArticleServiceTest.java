@@ -2,7 +2,7 @@ package com.primarchan.projectboard.service;
 
 import com.primarchan.projectboard.domain.Article;
 import com.primarchan.projectboard.domain.UserAccount;
-import com.primarchan.projectboard.domain.type.SearchType;
+import com.primarchan.projectboard.domain.constant.SearchType;
 import com.primarchan.projectboard.dto.ArticleDto;
 import com.primarchan.projectboard.dto.ArticleWithCommentsDto;
 import com.primarchan.projectboard.dto.UserAccountDto;
