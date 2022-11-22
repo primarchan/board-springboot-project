@@ -5,7 +5,7 @@ insert into user_account (user_id, user_password, nickname, email, memo, created
 ;
 
 insert into user_account (user_id, user_password, nickname, email, memo, created_at, created_by, modified_at, modified_by) values
-    ('primarchan2', '1111', 'Primarchan2', 'primarchan2@gmail.com', 'I am Primarchan2.', now(), 'primarchan2', now(), 'primarchan2')
+    ('primarchan2', '1111', 'Uno', 'primarchan2@gmail.com', 'I am Primarchan2.', now(), 'primarchan2', now(), 'primarchan2')
 ;
 
 -- 123 게시글
