@@ -2,6 +2,7 @@ package com.primarchan.projectboard.dto;
 
 import com.primarchan.projectboard.domain.Article;
 import com.primarchan.projectboard.domain.UserAccount;
+import lombok.ToString;
 
 import java.time.LocalDateTime;
 
