@@ -9,10 +9,13 @@ logging:
 
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/board
-    username: primarchan
+#    url: jdbc:mysql://localhost:3306/board
+    url: jdbc:postgresql://localhost:5432/board
+#    username: primarchan  # MySQL DB 사용자
+    username: kevin  # PostgreSQL DB 사용자
     password: 1111
-    driver-class-name: com.mysql.cj.jdbc.Driver
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: org.postgresql.Driver
 #    url: jdbc:h2:mem:testdb
 #    username: sa
 #    driver-class-name: org.h2.Driver
