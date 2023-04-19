@@ -6,6 +6,7 @@ import com.primarchan.projectboard.domain.constant.SearchType;
 import com.primarchan.projectboard.dto.ArticleDto;
 import com.primarchan.projectboard.dto.ArticleWithCommentsDto;
 import com.primarchan.projectboard.repository.ArticleRepository;
+import com.primarchan.projectboard.repository.HashtagRepository;
 import com.primarchan.projectboard.repository.UserAccountRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -26,6 +27,8 @@ public class ArticleService {
 
     private final ArticleRepository articleRepository;
     private final UserAccountRepository userAccountRepository;
+    private final HashtagService hashtagService;
+    private final HashtagRepository hashtagRepository;
 
     @Transactional(readOnly = true)
     public Page<ArticleDto> searchArticles(SearchType searchType, String searchKeyword, Pageable pageable) {
