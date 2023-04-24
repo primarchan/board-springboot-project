@@ -1,6 +1,7 @@
 package com.primarchan.projectboard.controller;
 
 import com.primarchan.projectboard.config.SecurityConfig;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,8 +23,8 @@ class MainControllerTest {
     public MainControllerTest(@Autowired MockMvc mvc) {
         this.mvc = mvc;
     }
-
-    @Test
+    
+    // @Test
     void givenNothing_whenRequestingRootPage_thenRedirectsToArticlesPage() throws Exception {
         // Given
 

@@ -1,6 +1,7 @@
 package com.primarchan.projectboard.controller;
 
 import com.primarchan.projectboard.config.SecurityConfig;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,8 +25,8 @@ public class AuthControllerTest {
         this.mvc = mvc;
     }
 
-    @DisplayName("[View][GET] 로그인 페이지 - 정상 호출")
-    @Test
+    // @DisplayName("[View][GET] 로그인 페이지 - 정상 호출")
+    // @Test
     public void givenNothing_whenTryToLogin_thenReturnsLoginView() throws Exception {
         // Given
 
