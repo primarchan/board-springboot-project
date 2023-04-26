@@ -1,6 +1,5 @@
 package com.primarchan.projectboard.controller;
 
-import com.primarchan.projectboard.dto.UserAccountDto;
 import com.primarchan.projectboard.dto.request.ArticleCommentRequest;
 import com.primarchan.projectboard.dto.security.BoardPrincipal;
 import com.primarchan.projectboard.service.ArticleCommentService;
